@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../react"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"cerrno": "cpp",
+			"ostream": "cpp",
+			"vector": "cpp",
+			"algorithm": "cpp",
+			"forward_list": "cpp",
+			"list": "cpp",
+			"ratio": "cpp",
+			"array": "cpp"
+		}
+	}
+}
