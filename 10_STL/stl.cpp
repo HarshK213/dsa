@@ -15,44 +15,48 @@ C++ STL ---------------------------- Algorithms
                     |
                     |
                     |-------------- Containers
-                                        |
-                                        |-------- Sequence Containers
-                                        |                |
-                                        |                |-------------  Array
-                                        |                |
-                                        |                |-------------  Vector
-                                        |                |
-                                        |                |-------------  Deque                                                                        
-                                        |                |
-                                        |                |-------------  List
-                                        |                |
-                                        |                |-------------  forward_list {Not IMP}
-                                        |
-                                        |-------- Container Adaptors
-                                        |                |
-                                        |                |-------------  Stack
-                                        |                |
-                                        |                |-------------  Queue
-                                        |                |
-                                        |                |-------------  Priority Queue                                                                        
-                                        |
-                                        |-------- Associative Containers
-                                        |                |
-                                        |                |-------------  Set
-                                        |                |
-                                        |                |-------------  Map
-                                        |                |
-                                        |                |-------------  MultiSet {Not IMP}
-                                        |                |
-                                        |                |-------------  MultiMap {Not IMP}                                                            
-                                        |
-                                        |-------- Unordered Associative 
-                                                         |
-                                                         |-------------  Unordered Set
-                                                         |
-                                                         |-------------  Unordered Map
-                                                         |
-                                                         |-------------  Unordered MultiSet {Not IMP}
-                                                         |
-                                                         |-------------  Unordered MultiMap {Not IMP} 
+                    |                   |
+                    |                   |-------- Sequence Containers
+                    |                   |                |
+                    |                   |                |-------------  Array
+                    |                   |                |
+                    |                   |                |-------------  Vector
+                    |                   |                |
+                    |                   |                |-------------  Deque                                                                        
+                    |                   |                |
+                    |                   |                |-------------  List
+                    |                   |                |
+                    |                   |                |-------------  forward_list {Not IMP}
+                    |                   |
+                    |                   |-------- Container Adaptors
+                    |                   |                |
+                    |                   |                |-------------  Stack
+                    |                   |                |
+                    |                   |                |-------------  Queue
+                    |                   |                |
+                    |                   |                |-------------  Priority Queue                                                                        
+                    |                   |
+                    |                   |-------- Associative Containers
+                    |                   |                |
+                    |                   |                |-------------  Set
+                    |                   |                |
+                    |                   |                |-------------  Map
+                    |                   |                |
+                    |                   |                |-------------  MultiSet {Not IMP}
+                    |                   |                |
+                    |                   |                |-------------  MultiMap {Not IMP}                                                            
+                    |                   |
+                    |                   |-------- Unordered Associative 
+                    |                                    |
+                    |                                    |-------------  Unordered Set
+                    |                                    |
+                    |                                    |-------------  Unordered Map
+                    |                                    |
+                    |                                    |-------------  Unordered MultiSet {Not IMP}
+                    |                                    |
+                    |                                    |-------------  Unordered MultiMap {Not IMP} 
+                    |
+                    |
+                    |-----------------Iterator
+                    |-----------------Functors
 */
