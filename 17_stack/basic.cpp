@@ -42,7 +42,7 @@ public:
     bool empty(){
         return ll.size() == 0;
     }
-}
+};  
 
 int main(){
     Stack s;
