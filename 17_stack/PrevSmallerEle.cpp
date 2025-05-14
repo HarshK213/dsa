@@ -7,9 +7,9 @@ vector<int> NextGreaterEle(vector<int>& arr){
     int n = arr.size();
     stack<int> s;
     vector<int> ans(n,0);
-    for(int i = n-1;i>=0;i--){
+    for(int i = 0;i<n;i++){
         
-        while(s.size() > 0 && s.top() <= arr[i]){
+        while(s.size() > 0 && s.top() >= arr[i]){
             s.pop();
         }
         if(s.empty()){
@@ -23,7 +23,7 @@ vector<int> NextGreaterEle(vector<int>& arr){
 }
 
 int main(){
-    vector<int> vec = {6,8,0,1,3};
+    vector<int> vec = {3,1,0,8,6};
     vector<int> ans = NextGreaterEle(vec);
     for(int i: ans)cout << i << " ";
     cout << endl;
