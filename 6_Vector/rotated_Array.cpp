@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 void RotateArray(vector<int>& arr,int k){
@@ -15,5 +16,6 @@ int main(){
     vector<int> vec ={1,2,3,4,5,6,7,8,9};
     RotateArray(vec,3);
     for(int i:vec)cout << i << " ";
+    cout << endl;
     return 0;
 }
