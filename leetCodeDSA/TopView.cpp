@@ -42,8 +42,8 @@ vector<int> TopView(Node* root){
                m[currHoriDis] = curr->val;
           }
 
+          if(curr->left != NULL)q.push({curr->left, currHoriDis-1});
           if(curr->right != NULL)q.push({curr->right, currHoriDis+1});
-          if(curr->left != NULL)q.push({curr->left, currHoriDis+1});
      }
  
      vector<int> ans;

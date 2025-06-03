@@ -30,8 +30,7 @@ vector<string> findPath(vector<vector<int>> &mat){
 }
 
 int main(){
-    vector<vector<int>> mat = {{1,0,0,0},{1,1,0,1},{1,1,0,0},{0,1,1,1}};
-
+    vector<vector<int>> mat = {{1,0,1,0,1,1},{1,1,1,1,1,1},{0,0,1,1,0,1}};
     vector<string> ans = findPath(mat);
     for(string path:ans){
         cout << path << endl;
