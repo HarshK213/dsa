@@ -16,7 +16,7 @@ class TreeNode{
 
 TreeNode* insert(TreeNode* root, int Val){
      if(root == NULL){
-          return new TreeNode(Val);
+          return new TreeNode(Val); 
      }
 
      if(Val < root->val){
