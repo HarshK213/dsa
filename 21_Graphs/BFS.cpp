@@ -7,7 +7,7 @@ using namespace std;
 class Graph{
     int V;
     list<int> *l;
-    
+
     public:
         Graph(int v){
             this->V = v;
@@ -19,9 +19,9 @@ class Graph{
             l[v].push_back(u);
         }
 
-        // BFS Traversal
+        // BFS Traversal - without source node
 
-        void BFS(){
+        void BFS1(){
             vector<bool> vec(V,false);
             queue<int> q;
             q.push(0);
@@ -38,6 +38,31 @@ class Graph{
                 }
             }
         }
+
+        // BFS Traversal - with source node
+
+        void BFS2(int sc){
+            vector<bool> vec(V,false);
+            helper(sc,vec);
+        }
+
+        void helper(int sc, vector<bool> vec){
+            queue<int> q;
+            q.push(sc);
+            vec[sc] = true;
+            while(!q.empty()){
+                int curr = q.front();
+                q.pop();
+                cout << curr << " ";
+                for(int i: l[sc]){
+                    if(!vec[i]){
+                        vec[i] = true;
+                        q.push(i);
+                    }
+                }
+            }
+        }
+
 };
 
 int main(){
@@ -49,7 +74,8 @@ int main(){
     g.addEdges(2,3);
     g.addEdges(2,4);
 
-g.BFS();
+    g.BFS1();
+    g.BFS2(0);
 
     return 0;
 }
