@@ -46,7 +46,7 @@ class Graph{
         vector<bool> visited(V,false);
         return helperBFS(sc,visited);
     }
-    
+
     bool helperBFS(int sc,vector<bool> vec){
         queue<pair<int,int>> q;
         q.push({sc,-1});
@@ -78,8 +78,8 @@ int main(){
     g.addEdges(3,4);
 
     cout << (g.haveCycleDFS(0)?"Have Cycle":"Not Have Cycle") << endl;
-    
+
     cout << (g.haveCycleBFS(0)?"Have Cycle":"Not Have Cycle") << endl;
-    
+
     return 0;
 }
